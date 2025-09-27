@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammed Suhail P | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+
+
+     <header>
+      <div class="container header-content">
+        <img
+          src="../Myphotos/bgchanged.png"
+          alt="Profile Picture"
+          class="profile-img"
+        />
+        <h1>Muhammed Suhail P</h1>
+        <h2>Full Stack Developer</h2>
+        <p class="tagline">Building scalable apps with .NET Core & React</p>
+       <div class="header-links">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=suhailpalakkal1@gmail.com"
+            target="_blank"
+            class="btn"
+          >
+            Email
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/muhammed-suhail-p-a0061235b"
+            target="_blank"
+            class="btn"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/mhdhsp" target="_blank" class="btn"
+            >GitHub</a
+          >
+          <a href="resume.pdf" target="_blank" class="btn primary"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="container">
+      <h3>👋 About Me</h3>
+      <p>
+        I’m a .NET Full-Stack Developer passionate about creating modern web
+        applications using ASP.NET Core, C#, Web API, SQL Server, and React. I
+        love combining clean backend logic with intuitive frontend design.
+        Always exploring new tech, solving problems, and turning ideas into
+        products.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container">
+      <h3>💻 Skills</h3>
+      <div class="card-grid">
+        <div class="card">C#, .NET Core, ASP.NET</div>
+        <div class="card">SQL Server, Entity Framework</div>
+        <div class="card">React, JavaScript</div>
+        <div class="card">HTML, CSS, Tailwind, Bootstrap</div>
+        <div class="card">REST APIs, JSON, Axios</div>
+        <div class="card">Git, GitHub, Agile</div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="container">
+      <h3>🚀 Experience</h3>
+      <div class="card">
+        <h4>Full Stack Developer Intern – Bridgeon IT Solutions</h4>
+        <p><em>Apr 2025 – Dec 2025 | Manjeri, Malappuram</em></p>
+        <ul>
+          <li>Created responsive UIs with React.js</li>
+          <li>Built REST APIs with .NET Core, C#, Web API</li>
+          <li>Integrated frontend & backend seamlessly</li>
+          <li>Collaborated in Agile teams with Git workflows</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects" class="container">
+      <h3>📂 Projects</h3>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Full-Stack E-Commerce Website</h4>
+          <p>
+            A complete e-commerce platform with user and admin panels. Features
+            include product browsing, search, filters, shopping cart, order
+            management, and admin dashboards for product and user management.
+          </p>
+          <p>
+            <strong>Frontend:</strong> React, Bootstrap, Axios<br />
+            <strong>Backend:</strong> ASP.NET Core Web API, Entity Framework<br />
+            <strong>Database:</strong> SQL Server<br />
+            <strong>Other Tools:</strong> AutoMapper, Bcrypt (password hashing)
+          </p>
+          <a
+            href="https://github.com/mhdhsp/Ecommerce"
+            target="_blank"
+            class="btn small"
+            >View Project</a
+          >
+        </div>
+        <!-- Add more projects here -->
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="container">
+      <h3>🎓 Education</h3>
+      <div class="card-grid">
+        <div class="card">
+          <p><strong>BCA</strong><br />Calicut University<br />2018 – 2021</p>
+        </div>
+        <div class="card">
+          <p>
+            <strong>Higher Secondary (CS)</strong><br />GMHSS Perinthalmanna<br />2016
+            – 2018
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section id="languages" class="container">
+      <h3>🌍 Languages</h3>
+      <div class="lang-badges">
+        <span>English</span>
+        <span>Arabic</span>
+        <span>Hindi</span>
+        <span>Malayalam</span>
+        <span>Tamil</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+  <section id="contact" class="container">
+  <h3>📬 Contact Me</h3>
+  <form id="contactForm" action="https://formspree.io/f/movnzedn" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
+</section>
+
+
+
+
+    <footer>
+      <p>⚡ Built by Muhammed Suhail P | Full Stack Developer</p>
+    </footer>
+
+
+    <script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault(); // stop normal reload
+    const formData = new FormData(form);
+
+    // send request to Formspree
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      alert("✅ Message sent successfully!");
+      form.reset(); // clears all fields
+    } else {
+      alert("⚠️ Oops! Something went wrong. Please try again.");
+    }
+  });
+</script>
+
+
+
+  </body>
+</html>

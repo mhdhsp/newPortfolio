@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Containers */
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #0073e6, #00c6a7);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-weight: 400;
+}
+
+.tagline {
+  margin: 15px 0;
+  font-style: italic;
+}
+
+.header-links {
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: white;
+  color: #0073e6;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #0073e6;
+  color: white;
+}
+
+.btn.primary {
+  background: #00c6a7;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #00997a;
+}
+
+.btn.small {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form */
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+form button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Language Badges */
+.lang-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.lang-badges span {
+  background: #0073e6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.lang-badges span:hover {
+  background: #00c6a7;
+  cursor: default;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0073e6;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+/* Profile Image */
+.profile-img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
